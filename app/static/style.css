@@ -1,0 +1,152 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* border: rebeccapurple 2px solid; */
+}
+
+body {
+  margin: 0;
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 17px;
+  color: #333;
+  line-height: 1.6;
+  background: #ddd;
+}
+
+/* Navigation */
+.nav-button {
+  position: absolute;
+  top: 15px;
+  right: 30px;
+  z-index: 2;
+
+  display: none;
+}
+
+.nav-button:hover {
+  cursor: pointer;
+}
+
+.navigation {
+  position: fixed;
+  width: 100%;
+  margin: auto;
+  line-height: 10vh;
+  z-index: 2;
+
+  background-color: none;
+
+  background-color: rgba(240, 240, 240, 0.8);
+
+  padding-left: 4rem;
+  padding-right: 4rem;
+
+  transition: 500ms;
+}
+
+.navigation-scroll {
+  transition: 500ms;
+  background-color: rgba(240, 240, 240, 0.7);
+}
+
+.logo {
+  /* color: #333; */
+  border: none;
+  /* font-size: 17px; */
+  background: inherit;
+}
+
+.img-logo {
+  height: 10vh;
+  width: auto;
+  margin: 10px;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.main-nav {
+  display: flex;
+  align-items: center;
+  /* This changes logo position */
+  justify-content: center;
+}
+
+/* Landing page */
+.showcase::after {
+  content: "";
+  height: 100vh;
+  width: 100%;
+  display: block;
+
+  background-image: url("background-image.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  /* filter: blur(0.5px); */
+  opacity: 0.6;
+}
+
+.content {
+  /* border: red 2px solid; */
+  text-align: justify;
+  width: 100vw;
+
+  position: absolute;
+  z-index: 1;
+  top: 30vh;
+  display: grid;
+}
+
+.button-icon {
+  width: 4rem;
+  padding-bottom: 5px;
+}
+
+.button {
+  text-align: center;
+  width: 75vw;
+  transition-duration: 0.4s;
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: #000;
+  padding: 12px 20px;
+  background-color: #ca4146;
+
+  margin: auto;
+  margin-bottom: 5vh;
+}
+
+.button:hover {
+  background-color: #db6165;
+
+  cursor: pointer;
+}
+
+.container {
+  max-width: 150vh;
+  margin: auto;
+  overflow: hidden;
+  padding: 3rem 1rem;
+}
+
+.grid-2 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3 {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.center {
+  text-align: center;
+  margin: auto;
+}

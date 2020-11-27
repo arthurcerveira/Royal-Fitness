@@ -1,0 +1,21 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <!-- Landing Page -->
+  <header class="showcase center">
+    <div class="content">
+      <a href="" class="button" target="_blank">
+        <object data="{{ url_for('static', filename='workout.svg')}}" type="image/svg+xml" class="button-icon"></object>
+        <br>
+        Check your workout »
+      </a>
+      <a href="" class="button" target="_blank">
+        <object data="{{ url_for('static', filename='yoga-pose.svg')}}" type="image/svg+xml" class="button-icon"></object>
+        <br>
+        Enroll to classes »
+      </a>
+    </div>
+  </header>
+{% endblock content %}
+
+  
