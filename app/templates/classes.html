@@ -2,8 +2,19 @@
 
 {% block content %}
     <div class="container">
-        {% for i in range(30) %}
-        <h1>Classes</h1>
+        {% for class in classes %}
+        <!-- <div class="grid-2"> -->
+            <div class="card class-card">
+                <img src="{{ url_for('static', filename=class.image)}}" class="card-image class-image" alt="Avatar">
+                <div class="card-text">
+                <p><b class="member-name">{{class.name.capitalize()}}</b></p>
+                <br />
+                <p class="member-status class-description">{{class.description}}</p>
+                <!-- <br /> -->
+                <p class="class-date">Every {{class.day}} at {{class.time}}</p>
+                </div>
+                <button class="button class-button">Enroll now »</button>
+            </div>
         {% endfor %}
     </div>
 {% endblock content %}

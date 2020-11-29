@@ -4,7 +4,7 @@
     <div class="container">
         {% for member in members %}
         <!-- <div class="grid-2"> -->
-        <a href="member/{{ member[0].id }}" class="link">
+        <a href="routine/{{ member[0].id }}" class="link">
             <div class="card">
                 <img src="{{ member[0].picture }}" class="card-image" alt="Avatar">
                 <div class="card-text">
@@ -18,13 +18,12 @@
                 </div>
             </div>
         </a>
-        <a href="member/{{ member[0].id }}" class="link">
+        <a href="routine/{{ member[1].id }}" class="link">
             <div class="card">
                 <img src="{{ member[1].picture }}" class="card-image" alt="Avatar">
                 <div class="card-text">
                 <p><b class="member-name">{{member[1].name}}</b></p>
                 <br />
-
                 {% if member[1].is_premium%}
                     <p class="member-status">Premium Member</p>
                 {% else %}
