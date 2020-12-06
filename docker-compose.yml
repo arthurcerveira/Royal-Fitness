@@ -1,0 +1,25 @@
+version: "3.7"
+
+services:
+  web:
+    build: .
+    volumes:
+      - ./app:/usr/src/app/
+    ports:
+      - 5000:5000
+    depends_on:
+      - db
+  db:
+    image: postgres:alpine
+    volumes:
+      - ./data/postgres/data:/var/lib/postgresql/data/
+      - ./data/postgres/script:/var/lib/postgresql/scripts/
+    environment:
+      - POSTGRES_USER=royal_fitness
+      - POSTGRES_PASSWORD=royal_fitness
+      - POSTGRES_DB=royal_fitness_dev
+    ports:
+      - "5432:5432"
+
+volumes:
+  postgres_data:

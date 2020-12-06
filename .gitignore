@@ -1,3 +1,4 @@
 royal-fitness.png
 venv/
 */__pycache__
+data/postgres/data
