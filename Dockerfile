@@ -4,6 +4,11 @@ FROM python:3.8.1-slim-buster
 # set work directory
 WORKDIR /usr/src/app
 
+# install postgres
+RUN apt-get update
+RUN apt-get install postgresql postgresql-contrib python-psycopg2 libpq-dev python-dev -y
+RUN apt-get install gcc -y
+
 # install dependencies
 RUN pip install --upgrade pip
 COPY ./requirements.txt /usr/src/app/requirements.txt
