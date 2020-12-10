@@ -11,8 +11,8 @@ HEADERS = {'Accept': 'application/json',
 
 URL = "https://wger.de/api/v2/"
 
-ENDPOINTS = {"exercises": URL + "exercise/?language=2",
-             "exercise_images":  URL + "exerciseimage/",
+ENDPOINTS = {"exercises": URL + "exercise/?language=2&limit=500",
+             "exercise_images":  URL + "exerciseimage/?limit=500",
              "equipment": URL + "equipment/?language=2",
              "muscle": URL + "muscle/?language=2",
              "category": URL + "exercisecategory/?language=2"}

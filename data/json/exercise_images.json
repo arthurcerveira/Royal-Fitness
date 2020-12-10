@@ -1,6 +1,6 @@
 {
     "count": 204,
-    "next": "https://wger.de/api/v2/exerciseimage/?limit=20&offset=20",
+    "next": null,
     "previous": null,
     "results": [
         {
@@ -8,15 +8,6 @@
             "license_author": "",
             "status": "2",
             "image": "https://wger.de/media/exercise-images/4/Crunches-1.png",
-            "is_main": true,
-            "license": 1,
-            "exercise": 4
-        },
-        {
-            "id": 2,
-            "license_author": "",
-            "status": "2",
-            "image": "https://wger.de/media/exercise-images/4/Crunches-2.png",
             "is_main": true,
             "license": 1,
             "exercise": 4
@@ -31,28 +22,10 @@
             "exercise": 91
         },
         {
-            "id": 4,
-            "license_author": "Everkinetic",
-            "status": "2",
-            "image": "https://wger.de/media/exercise-images/91/Crunches-2.png",
-            "is_main": true,
-            "license": 1,
-            "exercise": 91
-        },
-        {
             "id": 5,
             "license_author": "Everkinetic",
             "status": "2",
             "image": "https://wger.de/media/exercise-images/32/Decline-crunch-1.png",
-            "is_main": true,
-            "license": 1,
-            "exercise": 32
-        },
-        {
-            "id": 6,
-            "license_author": "Everkinetic",
-            "status": "2",
-            "image": "https://wger.de/media/exercise-images/32/Decline-crunch-2.png",
             "is_main": true,
             "license": 1,
             "exercise": 32
@@ -67,28 +40,10 @@
             "exercise": 93
         },
         {
-            "id": 8,
-            "license_author": "",
-            "status": "2",
-            "image": "https://wger.de/media/exercise-images/93/Decline-crunch-2.png",
-            "is_main": true,
-            "license": 1,
-            "exercise": 93
-        },
-        {
             "id": 9,
             "license_author": "Everkinetic",
             "status": "2",
             "image": "https://wger.de/media/exercise-images/60/Hyperextensions-1.png",
-            "is_main": true,
-            "license": 1,
-            "exercise": 60
-        },
-        {
-            "id": 10,
-            "license_author": "Everkinetic",
-            "status": "2",
-            "image": "https://wger.de/media/exercise-images/60/Hyperextensions-2.png",
             "is_main": true,
             "license": 1,
             "exercise": 60
@@ -103,28 +58,10 @@
             "exercise": 128
         },
         {
-            "id": 12,
-            "license_author": "Everkinetic",
-            "status": "2",
-            "image": "https://wger.de/media/exercise-images/128/Hyperextensions-2.png",
-            "is_main": true,
-            "license": 1,
-            "exercise": 128
-        },
-        {
             "id": 13,
             "license_author": "Everkinetic",
             "status": "2",
             "image": "https://wger.de/media/exercise-images/38/Narrow-grip-bench-press-1.png",
-            "is_main": true,
-            "license": 1,
-            "exercise": 38
-        },
-        {
-            "id": 14,
-            "license_author": "Everkinetic",
-            "status": "2",
-            "image": "https://wger.de/media/exercise-images/38/Narrow-grip-bench-press-2.png",
             "is_main": true,
             "license": 1,
             "exercise": 38
@@ -139,28 +76,10 @@
             "exercise": 88
         },
         {
-            "id": 16,
-            "license_author": "Everkinetic",
-            "status": "2",
-            "image": "https://wger.de/media/exercise-images/88/Narrow-grip-bench-press-2.png",
-            "is_main": true,
-            "license": 1,
-            "exercise": 88
-        },
-        {
             "id": 17,
             "license_author": "Everkinetic",
             "status": "2",
             "image": "https://wger.de/media/exercise-images/3/Standing-biceps-curl-1.png",
-            "is_main": true,
-            "license": 1,
-            "exercise": 3
-        },
-        {
-            "id": 18,
-            "license_author": "Everkinetic",
-            "status": "2",
-            "image": "https://wger.de/media/exercise-images/3/Standing-biceps-curl-2.png",
             "is_main": true,
             "license": 1,
             "exercise": 3
@@ -175,13 +94,1750 @@
             "exercise": 129
         },
         {
+            "id": 21,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/26/Biceps-curl-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 26
+        },
+        {
+            "id": 23,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/81/Biceps-curl-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 81
+        },
+        {
+            "id": 25,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/24/Bicep-curls-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 24
+        },
+        {
+            "id": 27,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/74/Bicep-curls-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 74
+        },
+        {
+            "id": 29,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/29/Tricep-dips-2-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 29
+        },
+        {
+            "id": 31,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/82/Tricep-dips-2-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 82
+        },
+        {
+            "id": 33,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/68/Bench-dips-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 68
+        },
+        {
+            "id": 35,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/83/Bench-dips-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 83
+        },
+        {
+            "id": 37,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/8/Dumbbell-shrugs-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 8
+        },
+        {
+            "id": 39,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/151/Dumbbell-shrugs-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 151
+        },
+        {
+            "id": 41,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/137/Barbell-shrugs-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 137
+        },
+        {
+            "id": 43,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/150/Barbell-shrugs-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 150
+        },
+        {
+            "id": 45,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/46/Bicep-hammer-curl-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 46
+        },
+        {
+            "id": 47,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/86/Bicep-hammer-curl-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 86
+        },
+        {
+            "id": 49,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/134/Hammer-curls-with-rope-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 134
+        },
+        {
+            "id": 51,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/138/Hammer-curls-with-rope-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 138
+        },
+        {
+            "id": 53,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/172/Push-ups-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 172
+        },
+        {
+            "id": 55,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/195/Push-ups-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 195
+        },
+        {
+            "id": 58,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/25/Lying-close-grip-triceps-press-to-chin-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 25
+        },
+        {
+            "id": 60,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/84/Lying-close-grip-triceps-press-to-chin-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 84
+        },
+        {
+            "id": 62,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/45/Seated-triceps-press-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 45
+        },
+        {
+            "id": 64,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/50/Good-mornings-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 50
+        },
+        {
+            "id": 66,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/116/Good-mornings-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 116
+        },
+        {
+            "id": 68,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/192/Bench-press-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 192
+        },
+        {
+            "id": 69,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/62/Barbell-upright-rows-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 62
+        },
+        {
+            "id": 72,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/36/Chin-ups-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 36
+        },
+        {
+            "id": 73,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/181/Chin-ups-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 181
+        },
+        {
+            "id": 76,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/76/T-bar-row-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 76
+        },
+        {
+            "id": 77,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/106/T-bar-row-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 106
+        },
+        {
+            "id": 80,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/59/Barbell-rear-delt-row-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 59
+        },
+        {
+            "id": 84,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/109/Barbell-rear-delt-row-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 109
+        },
+        {
+            "id": 88,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/70/Reverse-grip-bent-over-rows-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 70
+        },
+        {
+            "id": 91,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/110/Reverse-grip-bent-over-rows-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 110
+        },
+        {
+            "id": 93,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/193/Preacher-curl-3-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 193
+        },
+        {
+            "id": 95,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/11/Rear-deltoid-row-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 11
+        },
+        {
+            "id": 97,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/15/Bench-press-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 15
+        },
+        {
+            "id": 99,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/77/One-arm-bench-press-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 77
+        },
+        {
+            "id": 101,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/18/Dumbbell-flys-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 18
+        },
+        {
+            "id": 104,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/73/Dumbbell-decline-flys-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 73
+        },
+        {
+            "id": 105,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/16/Incline-press-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 16
+        },
+        {
+            "id": 107,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/61/Close-grip-bench-press-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 61
+        },
+        {
+            "id": 109,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/30/Butterfly-machine-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 30
+        },
+        {
+            "id": 111,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/98/Butterfly-machine-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 98
+        },
+        {
+            "id": 113,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/97/Dumbbell-bench-press-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 97
+        },
+        {
+            "id": 115,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/100/Decline-bench-press-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 100
+        },
+        {
+            "id": 117,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/163/Incline-bench-press-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 163
+        },
+        {
+            "id": 119,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/122/Incline-cable-flyes-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 122
+        },
+        {
+            "id": 121,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/113/Walking-lunges-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 113
+        },
+        {
+            "id": 125,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/130/Narrow-stance-hack-squats-1-1024x721.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 130
+        },
+        {
+            "id": 127,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/71/Cable-crossover-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 71
+        },
+        {
+            "id": 129,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/41/Incline-bench-press-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 41
+        },
+        {
+            "id": 131,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/9/Dead-lifts-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 9
+        },
+        {
+            "id": 133,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/17/Decline-bench-press-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 17
+        },
+        {
+            "id": 135,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/56/Decline-crunch-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 56
+        },
+        {
+            "id": 137,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/34/Leg-raises-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 34
+        },
+        {
+            "id": 139,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/125/Leg-raises-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 125
+        },
+        {
+            "id": 141,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/37/Cable-seated-rows-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 37
+        },
+        {
+            "id": 143,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/143/Cable-seated-rows-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 143
+        },
+        {
+            "id": 145,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/161/Dead-lifts-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 161
+        },
+        {
+            "id": 147,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/176/Cross-body-crunch-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 176
+        },
+        {
+            "id": 149,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/191/Front-squat-1-857x1024.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 191
+        },
+        {
+            "id": 151,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/111/Wide-stance-squat-2.gif",
+            "is_main": true,
+            "license": 1,
+            "exercise": 111
+        },
+        {
+            "id": 153,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/7/Wide-stance-squat-2.gif",
+            "is_main": true,
+            "license": 1,
+            "exercise": 7
+        },
+        {
+            "id": 155,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/5/Walking-lunges-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 5
+        },
+        {
+            "id": 159,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/55/Lunges-2-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 55
+        },
+        {
+            "id": 161,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/6/Leg-press-1-1024x670.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 6
+        },
+        {
+            "id": 163,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/54/Leg-press-1-1024x670.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 54
+        },
+        {
+            "id": 165,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/39/Seated-leg-curl-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 39
+        },
+        {
+            "id": 167,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/177/Seated-leg-curl-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 177
+        },
+        {
+            "id": 169,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/72/Standing-leg-curl-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 72
+        },
+        {
+            "id": 171,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/119/seated-barbell-shoulder-press-large-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 119
+        },
+        {
+            "id": 173,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/123/dumbbell-shoulder-press-large-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 123
+        },
+        {
+            "id": 175,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/152/seated-shoulder-press-machine-large-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 152
+        },
+        {
+            "id": 177,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/148/lateral-dumbbell-raises-large-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 148
+        },
+        {
+            "id": 179,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/154/lying-leg-curl-machine-large-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 154
+        },
+        {
+            "id": 181,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/117/seated-leg-curl-large-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 117
+        },
+        {
+            "id": 183,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/118/standing-leg-curls-large-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 118
+        },
+        {
+            "id": 185,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/22/lying-leg-curl-machine-large-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 22
+        },
+        {
+            "id": 187,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/133/seated-leg-curl-large-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 133
+        },
+        {
+            "id": 189,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/231/Standing-biceps-curl-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 231
+        },
+        {
+            "id": 191,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/232/Triceps-kickback-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 232
+        },
+        {
+            "id": 193,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/228/Arnold-press-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 228
+        },
+        {
+            "id": 195,
+            "license_author": "wger.de",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/53/Shoulder-press-machine-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 53
+        },
+        {
+            "id": 197,
+            "license_author": "wger.de",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/241/Dumbbell-shoulder-press-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 241
+        },
+        {
+            "id": 199,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/266/Seated-military-shoulder-press-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 266
+        },
+        {
+            "id": 201,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/20/Dumbbell-lateral-raises-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 20
+        },
+        {
+            "id": 203,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/47/Lying-rear-lateral-raise-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 47
+        },
+        {
+            "id": 205,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/242/Incline-biceps-curl-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 242
+        },
+        {
+            "id": 207,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/13/Standing-calf-raises-1.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 13
+        },
+        {
+            "id": 209,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/244/Close-grip-front-lat-pull-down-2.png",
+            "is_main": true,
+            "license": 1,
+            "exercise": 244
+        },
+        {
+            "id": 2,
+            "license_author": "",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/4/Crunches-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 4
+        },
+        {
+            "id": 4,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/91/Crunches-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 91
+        },
+        {
+            "id": 6,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/32/Decline-crunch-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 32
+        },
+        {
+            "id": 8,
+            "license_author": "",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/93/Decline-crunch-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 93
+        },
+        {
+            "id": 10,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/60/Hyperextensions-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 60
+        },
+        {
+            "id": 12,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/128/Hyperextensions-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 128
+        },
+        {
+            "id": 14,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/38/Narrow-grip-bench-press-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 38
+        },
+        {
+            "id": 16,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/88/Narrow-grip-bench-press-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 88
+        },
+        {
+            "id": 18,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/3/Standing-biceps-curl-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 3
+        },
+        {
             "id": 20,
             "license_author": "Everkinetic",
             "status": "2",
             "image": "https://wger.de/media/exercise-images/129/Standing-biceps-curl-2.png",
-            "is_main": true,
+            "is_main": false,
             "license": 1,
             "exercise": 129
+        },
+        {
+            "id": 22,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/26/Biceps-curl-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 26
+        },
+        {
+            "id": 24,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/81/Biceps-curl-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 81
+        },
+        {
+            "id": 26,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/24/Bicep-curls-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 24
+        },
+        {
+            "id": 28,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/74/Bicep-curls-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 74
+        },
+        {
+            "id": 30,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/29/Tricep-dips-2-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 29
+        },
+        {
+            "id": 32,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/82/Tricep-dips-2-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 82
+        },
+        {
+            "id": 34,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/68/Bench-dips-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 68
+        },
+        {
+            "id": 36,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/83/Bench-dips-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 83
+        },
+        {
+            "id": 38,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/8/Dumbbell-shrugs-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 8
+        },
+        {
+            "id": 40,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/151/Dumbbell-shrugs-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 151
+        },
+        {
+            "id": 42,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/137/Barbell-shrugs-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 137
+        },
+        {
+            "id": 44,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/150/Barbell-shrugs-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 150
+        },
+        {
+            "id": 46,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/46/Bicep-hammer-curl-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 46
+        },
+        {
+            "id": 48,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/86/Bicep-hammer-curl-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 86
+        },
+        {
+            "id": 50,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/134/Hammer-curls-with-rope-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 134
+        },
+        {
+            "id": 52,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/138/Hammer-curls-with-rope-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 138
+        },
+        {
+            "id": 56,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/172/Push-ups-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 172
+        },
+        {
+            "id": 57,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/195/Push-ups-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 195
+        },
+        {
+            "id": 59,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/25/Lying-close-grip-triceps-press-to-chin-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 25
+        },
+        {
+            "id": 61,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/84/Lying-close-grip-triceps-press-to-chin-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 84
+        },
+        {
+            "id": 63,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/45/Seated-triceps-press-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 45
+        },
+        {
+            "id": 65,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/50/Good-mornings-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 50
+        },
+        {
+            "id": 67,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/116/Good-mornings-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 116
+        },
+        {
+            "id": 70,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/192/Bench-press-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 192
+        },
+        {
+            "id": 71,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/62/Barbell-upright-rows-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 62
+        },
+        {
+            "id": 74,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/36/Chin-ups-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 36
+        },
+        {
+            "id": 75,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/181/Chin-ups-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 181
+        },
+        {
+            "id": 78,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/76/T-bar-row-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 76
+        },
+        {
+            "id": 79,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/106/T-bar-row-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 106
+        },
+        {
+            "id": 82,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/59/Barbell-rear-delt-row-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 59
+        },
+        {
+            "id": 89,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/70/Reverse-grip-bent-over-rows-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 70
+        },
+        {
+            "id": 90,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/109/Barbell-rear-delt-row-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 109
+        },
+        {
+            "id": 92,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/110/Reverse-grip-bent-over-rows-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 110
+        },
+        {
+            "id": 94,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/193/Preacher-curl-3-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 193
+        },
+        {
+            "id": 96,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/11/Rear-deltoid-row-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 11
+        },
+        {
+            "id": 98,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/15/Bench-press-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 15
+        },
+        {
+            "id": 100,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/77/One-arm-bench-press-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 77
+        },
+        {
+            "id": 102,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/18/Dumbbell-flys-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 18
+        },
+        {
+            "id": 103,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/73/Dumbbell-decline-flys-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 73
+        },
+        {
+            "id": 106,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/16/Incline-press-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 16
+        },
+        {
+            "id": 108,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/61/Close-grip-bench-press-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 61
+        },
+        {
+            "id": 110,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/30/Butterfly-machine-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 30
+        },
+        {
+            "id": 112,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/98/Butterfly-machine-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 98
+        },
+        {
+            "id": 114,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/97/Dumbbell-bench-press-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 97
+        },
+        {
+            "id": 116,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/100/Decline-bench-press-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 100
+        },
+        {
+            "id": 118,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/163/Incline-bench-press-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 163
+        },
+        {
+            "id": 120,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/122/Incline-cable-flyes-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 122
+        },
+        {
+            "id": 122,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/113/Walking-lunges-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 113
+        },
+        {
+            "id": 123,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/113/Walking-lunges-3.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 113
+        },
+        {
+            "id": 124,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/113/Walking-lunges-4.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 113
+        },
+        {
+            "id": 126,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/130/Narrow-stance-hack-squats-2-1024x721.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 130
+        },
+        {
+            "id": 128,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/71/Cable-crossover-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 71
+        },
+        {
+            "id": 130,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/41/Incline-bench-press-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 41
+        },
+        {
+            "id": 132,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/9/Dead-lifts-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 9
+        },
+        {
+            "id": 134,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/17/Decline-bench-press-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 17
+        },
+        {
+            "id": 136,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/56/Decline-crunch-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 56
+        },
+        {
+            "id": 138,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/34/Leg-raises-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 34
+        },
+        {
+            "id": 140,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/125/Leg-raises-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 125
+        },
+        {
+            "id": 142,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/37/Cable-seated-rows-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 37
+        },
+        {
+            "id": 144,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/143/Cable-seated-rows-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 143
+        },
+        {
+            "id": 146,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/161/Dead-lifts-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 161
+        },
+        {
+            "id": 148,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/176/Cross-body-crunch-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 176
+        },
+        {
+            "id": 150,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/191/Front-squat-2-857x1024.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 191
+        },
+        {
+            "id": 152,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/111/Wide-stance-squat-1.gif",
+            "is_main": false,
+            "license": 1,
+            "exercise": 111
+        },
+        {
+            "id": 154,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/7/Wide-stance-squat-1.gif",
+            "is_main": false,
+            "license": 1,
+            "exercise": 7
+        },
+        {
+            "id": 156,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/5/Walking-lunges-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 5
+        },
+        {
+            "id": 157,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/5/Walking-lunges-3.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 5
+        },
+        {
+            "id": 158,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/5/Walking-lunges-4.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 5
+        },
+        {
+            "id": 160,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/55/Lunges-2-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 55
+        },
+        {
+            "id": 162,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/6/Leg-press-2-1024x670.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 6
+        },
+        {
+            "id": 164,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/54/Leg-press-2-1024x670.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 54
+        },
+        {
+            "id": 166,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/39/Seated-leg-curl-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 39
+        },
+        {
+            "id": 168,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/177/Seated-leg-curl-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 177
+        },
+        {
+            "id": 170,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/72/Standing-leg-curl-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 72
+        },
+        {
+            "id": 172,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/119/seated-barbell-shoulder-press-large-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 119
+        },
+        {
+            "id": 174,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/123/dumbbell-shoulder-press-large-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 123
+        },
+        {
+            "id": 176,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/152/seated-shoulder-press-machine-large-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 152
+        },
+        {
+            "id": 178,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/148/lateral-dumbbell-raises-large-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 148
+        },
+        {
+            "id": 180,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/154/lying-leg-curl-machine-large-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 154
+        },
+        {
+            "id": 182,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/117/seated-leg-curl-large-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 117
+        },
+        {
+            "id": 184,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/118/standing-leg-curls-large-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 118
+        },
+        {
+            "id": 186,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/22/lying-leg-curl-machine-large-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 22
+        },
+        {
+            "id": 188,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/133/seated-leg-curl-large-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 133
+        },
+        {
+            "id": 190,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/231/Standing-biceps-curl-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 231
+        },
+        {
+            "id": 192,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/232/Triceps-kickback-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 232
+        },
+        {
+            "id": 194,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/228/Arnold-press-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 228
+        },
+        {
+            "id": 196,
+            "license_author": "wger.de",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/53/Shoulder-press-machine-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 53
+        },
+        {
+            "id": 198,
+            "license_author": "wger.de",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/241/Dumbbell-shoulder-press-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 241
+        },
+        {
+            "id": 200,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/266/Seated-military-shoulder-press-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 266
+        },
+        {
+            "id": 202,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/20/Dumbbell-lateral-raises-2_LxObAQ4.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 20
+        },
+        {
+            "id": 204,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/47/Lying-rear-lateral-raise-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 47
+        },
+        {
+            "id": 206,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/242/Incline-biceps-curl-2.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 242
+        },
+        {
+            "id": 208,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/13/Standing-calf-raises-2.gif",
+            "is_main": false,
+            "license": 1,
+            "exercise": 13
+        },
+        {
+            "id": 210,
+            "license_author": "Everkinetic",
+            "status": "2",
+            "image": "https://wger.de/media/exercise-images/244/Close-grip-front-lat-pull-down-1.png",
+            "is_main": false,
+            "license": 1,
+            "exercise": 244
         }
     ]
 }

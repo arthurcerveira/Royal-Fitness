@@ -88,17 +88,18 @@ FOREIGN KEY (member_cpf) REFERENCES member(cpf)
     ON UPDATE CASCADE);
 
 CREATE TABLE IF NOT EXISTS equipment (
-    id              SERIAL UNIQUE NOT NULL,
+    id              INT UNIQUE NOT NULL,
     equipment_name  VARCHAR(30) NOT NULL,
 PRIMARY KEY (id));
 
 CREATE TABLE IF NOT EXISTS exercise_info (
-    exercise_id              SERIAL NOT NULL,
-    exercise_name   VARCHAR(30) NOT NULL,
-    exercise_desc   VARCHAR(1000),
+    exercise_id     SERIAL UNIQUE NOT NULL,
+    exercise_name   VARCHAR(100) NOT NULL,
+    exercise_desc   VARCHAR(5000),
     primary_muscle  VARCHAR(50), 
     second_muscle   VARCHAR(50),
-    equipment_id    SERIAL UNIQUE NOT NULL,
+    equipment_id    INT DEFAULT NULL,
+    picture_url     VARCHAR(200),
 PRIMARY KEY (exercise_id),
 FOREIGN KEY (equipment_id) REFERENCES equipment(id)
     ON DELETE SET NULL
