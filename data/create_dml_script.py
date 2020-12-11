@@ -2,7 +2,27 @@
 from pprint import pprint
 import json
 
-DML = open("./postgres/script/DML.sql", "w")
+DML = open("./postgres/script/DML-API.sql", "w")
+
+# Add people data to DB
+DML.write("-- PEOPLE\n")
+
+with open("./json/people.json") as people_json:
+    people_data = json.load(people_json)["results"]
+
+for person in people_data:
+    cpf = person['cpf']
+    name = person["name"]
+    dob = f"TO_DATE('{person['date_of_birth']}', 'YYYY/MM/DD')"
+    phone = person['phone_number']
+    picture = person['picture_url']
+
+    query = "INSERT INTO person (cpf, person_name, date_of_birth, " \
+            + "phone_number, picture_url)\n" \
+            + f"VALUES ('{cpf}', '{name}', {dob}, '{phone}', '{picture}')\n" \
+            + "ON CONFLICT (cpf) DO NOTHING;\n\n"
+
+    DML.write(query)
 
 # Add equipment data to DB
 DML.write("-- EQUIPMENT\n")

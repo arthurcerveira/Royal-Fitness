@@ -14,7 +14,7 @@ CREATE TABLE IF NOT EXISTS person (
     cpf             cpf,
     person_name     VARCHAR(40) NOT NULL,    
     date_of_birth   DATE,
-    phone_number    VARCHAR(11),
+    phone_number    VARCHAR(20),
     picture_url     VARCHAR(500),
 PRIMARY KEY (cpf));
 
@@ -60,6 +60,7 @@ CREATE TABLE IF NOT EXISTS class (
     day_of_week     day_of_week,
     positions       class_positions NOT NULL,
     schedule        VARCHAR(5) NOT NULL,
+    picture         VARCHAR(200),
     instructor_cpf  cpf,
 PRIMARY KEY (id),
 FOREIGN KEY (instructor_cpf) REFERENCES instructor(cpf)

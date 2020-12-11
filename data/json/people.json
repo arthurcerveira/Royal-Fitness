@@ -1,0 +1,74 @@
+{
+    "results": [
+        {
+            "cpf": "90673994988",
+            "name": "Sophie Bishop",
+            "date_of_birth": "1997/11/21",
+            "phone_number": "0754-620-190",
+            "picture_url": "https://randomuser.me/api/portraits/women/36.jpg"
+        },
+        {
+            "cpf": "45784953062",
+            "name": "Anne Chevalier",
+            "date_of_birth": "1992/10/02",
+            "phone_number": "079 808 88 40",
+            "picture_url": "https://randomuser.me/api/portraits/women/63.jpg"
+        },
+        {
+            "cpf": "26219538201",
+            "name": "Lyam Caron",
+            "date_of_birth": "1950/10/09",
+            "phone_number": "06-67-29-55-54",
+            "picture_url": "https://randomuser.me/api/portraits/men/49.jpg"
+        },
+        {
+            "cpf": "11463684822",
+            "name": "Julia Harcourt",
+            "date_of_birth": "1961/01/26",
+            "phone_number": "0935-739-5329",
+            "picture_url": "https://randomuser.me/api/portraits/women/82.jpg"
+        },
+        {
+            "cpf": "83255315533",
+            "name": "Elliot Harcourt",
+            "date_of_birth": "1946/08/04",
+            "phone_number": "129-267-9591",
+            "picture_url": "https://randomuser.me/api/portraits/men/72.jpg"
+        },
+        {
+            "cpf": "66487723091",
+            "name": "Silas Jurgensen",
+            "date_of_birth": "1958/01/17",
+            "phone_number": "39856716",
+            "picture_url": "https://randomuser.me/api/portraits/men/78.jpg"
+        },
+        {
+            "cpf": "80450893104",
+            "name": "Jorge Gomez",
+            "date_of_birth": "1985/11/06",
+            "phone_number": "(358)-447-2950",
+            "picture_url": "https://randomuser.me/api/portraits/men/61.jpg"
+        },
+        {
+            "cpf": "82037012079",
+            "name": "Angie Reyes",
+            "date_of_birth": "1960/02/02",
+            "phone_number": "081-052-8511",
+            "picture_url": "https://randomuser.me/api/portraits/women/16.jpg"
+        },
+        {
+            "cpf": "97138857502",
+            "name": "Aubrey Harris",
+            "date_of_birth": "1950/09/02",
+            "phone_number": "195-217-8562",
+            "picture_url": "https://randomuser.me/api/portraits/women/48.jpg"
+        },
+        {
+            "cpf": "13398564082",
+            "name": "Melani Rodrigues",
+            "date_of_birth": "1945/07/04",
+            "phone_number": "(59) 0568-7086",
+            "picture_url": "https://randomuser.me/api/portraits/women/90.jpg"
+        }
+    ]
+}

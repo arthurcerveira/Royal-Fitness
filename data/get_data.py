@@ -1,10 +1,11 @@
-# Get data from the wger API and convert it to JSON
+# Get data from the APIs and convert it to JSON
 import json
 import os
+from random import randint
 
 import requests
 
-
+# WGER API
 TOKEN_KEY = os.environ.get("WGER_TOKEN")
 HEADERS = {'Accept': 'application/json',
            'Authorization': f'Token {TOKEN_KEY}'}
@@ -22,3 +23,25 @@ for endpoint, url in ENDPOINTS.items():
 
     with open(f"json/{endpoint}.json", 'w') as json_file:
         json.dump(response.json(), json_file, indent=4)
+
+
+# RANDOM USER API
+URL = 'https://randomuser.me/api/?results=10'
+
+HEADERS = {'Accept': 'application/json'}
+
+response = requests.get(url=URL, headers=HEADERS)
+people_data = response.json()['results']
+
+people = [{
+    'cpf': str(randint(10000000000, 99999999999)),
+    'name': f"{person['name']['first']} {person['name']['last']}",
+    'date_of_birth': person['dob']['date'][:10].replace('-', '/'),
+    'phone_number': person['cell'],
+    'picture_url': person['picture']['large']
+} for person in people_data]
+
+people_dict = {"results": people}
+
+with open(f"json/people.json", 'w') as json_file:
+    json.dump(people_dict, json_file, indent=4)
