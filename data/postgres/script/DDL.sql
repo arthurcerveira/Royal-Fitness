@@ -82,7 +82,7 @@ FOREIGN KEY (member_cpf) REFERENCES member(cpf)
 CREATE TABLE IF NOT EXISTS routine (
     id              SERIAL UNIQUE NOT NULL,
     is_standard     BOOLEAN NOT NULL,
-    member_cpf      cpf DEFAULT NULL,
+    member_cpf      VARCHAR(11) DEFAULT NULL,
 PRIMARY KEY (id),
 FOREIGN KEY (member_cpf) REFERENCES member(cpf)
     ON DELETE CASCADE
@@ -107,7 +107,7 @@ FOREIGN KEY (equipment_id) REFERENCES equipment(id)
     ON UPDATE CASCADE);
 
 CREATE TABLE IF NOT EXISTS workout (
-    routine_id      SERIAL UNIQUE NOT NULL,
+    routine_id      SERIAL NOT NULL,
     day_of_week     day_of_week NOT NULL,
     duration        INT,
 PRIMARY KEY (routine_id, day_of_week),
@@ -116,8 +116,8 @@ FOREIGN KEY (routine_id) REFERENCES routine(id)
     ON UPDATE CASCADE);
 
 CREATE TABLE IF NOT EXISTS cardio_exercise (
-    routine_id      SERIAL UNIQUE NOT NULL,
-    exercise_id     SERIAL UNIQUE NOT NULL,
+    routine_id      SERIAL NOT NULL,
+    exercise_id     SERIAL NOT NULL,
     day_of_week     day_of_week NOT NULL,
     duration        INT,
     intensity       INT,
@@ -130,8 +130,8 @@ FOREIGN KEY (exercise_id) REFERENCES exercise_info(exercise_id)
     ON UPDATE CASCADE);
 
 CREATE TABLE IF NOT EXISTS strenght_exercise (
-    routine_id      SERIAL UNIQUE NOT NULL,
-    exercise_id     SERIAL UNIQUE NOT NULL,
+    routine_id      SERIAL NOT NULL,
+    exercise_id     SERIAL NOT NULL,
     day_of_week     day_of_week NOT NULL,
     exercise_sets   INT,
     repetition      INT,

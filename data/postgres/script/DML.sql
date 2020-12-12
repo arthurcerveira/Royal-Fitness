@@ -54,3 +54,322 @@ INSERT INTO class (class_name, class_desc, day_of_week,
 VALUES ('Boxing', 'Boxing is a sport that involves strategically punching an opponent while defending yourself from their return punches.',
      'thursday', 20, '17:30', '11463684822', 'boxing-class.jpeg')
 ON CONFLICT (id) DO NOTHING;
+
+-- MEMBER ROUTINES
+INSERT INTO routine (id, member_cpf, is_standard)
+VALUES (1, '66487723091', FALSE)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO workout (routine_id, day_of_week, duration)
+VALUES (1, 'monday', 45)
+ON CONFLICT (routine_id, day_of_week) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (1, 'monday', 105, 5, 5, 80)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (1, 'monday', 107, 3, 12, 10)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (1, 'monday', 86, 3, 12, 10)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO workout (routine_id, day_of_week, duration)
+VALUES (1, 'wednesday', 45)
+ON CONFLICT (routine_id, day_of_week) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (1, 'wednesday', 192, 5, 5, 70)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (1, 'wednesday', 229, 3, 12, 40)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (1, 'wednesday', 162, 3, 12, 10)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO workout (routine_id, day_of_week, duration)
+VALUES (1, 'friday', 45)
+ON CONFLICT (routine_id, day_of_week) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (1, 'friday', 111, 5, 5, 90)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (1, 'friday', 351, 3, 12, 40)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (1, 'friday', 788, 3, 12, 120)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+-- ROUTINE 2
+INSERT INTO routine (id, member_cpf, is_standard)
+VALUES (2, '80450893104', FALSE)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO workout (routine_id, day_of_week, duration)
+VALUES (2, 'tuesday', 60)
+ON CONFLICT (routine_id, day_of_week) DO NOTHING;
+
+INSERT INTO cardio_exercise (routine_id, day_of_week, exercise_id,
+    duration, intensity)
+VALUES (2, 'tuesday', 293, 30, 5)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO cardio_exercise (routine_id, day_of_week, exercise_id,
+    duration, intensity)
+VALUES (2, 'tuesday', 269, 30, 8)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO workout (routine_id, day_of_week, duration)
+VALUES (2, 'thursday', 60)
+ON CONFLICT (routine_id, day_of_week) DO NOTHING;
+
+INSERT INTO cardio_exercise (routine_id, day_of_week, exercise_id,
+    duration, intensity)
+VALUES (2, 'thursday', 806, 30, 5)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO cardio_exercise (routine_id, day_of_week, exercise_id,
+    duration, intensity)
+VALUES (2, 'thursday', 397, 30, 7)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+-- ROUTINE 3
+INSERT INTO routine (id, member_cpf, is_standard)
+VALUES (3, '82037012079', FALSE)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO workout (routine_id, day_of_week, duration)
+VALUES (3, 'tuesday', 60)
+ON CONFLICT (routine_id, day_of_week) DO NOTHING;
+
+INSERT INTO cardio_exercise (routine_id, day_of_week, exercise_id,
+    duration, intensity)
+VALUES (3, 'tuesday', 293, 30, 5)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO cardio_exercise (routine_id, day_of_week, exercise_id,
+    duration, intensity)
+VALUES (3, 'tuesday', 269, 30, 8)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO workout (routine_id, day_of_week, duration)
+VALUES (3, 'thursday', 60)
+ON CONFLICT (routine_id, day_of_week) DO NOTHING;
+
+INSERT INTO cardio_exercise (routine_id, day_of_week, exercise_id,
+    duration, intensity)
+VALUES (3, 'thursday', 806, 30, 5)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO cardio_exercise (routine_id, day_of_week, exercise_id,
+    duration, intensity)
+VALUES (3, 'thursday', 397, 30, 7)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+-- ROUTINE 4
+INSERT INTO routine (id, member_cpf, is_standard)
+VALUES (4, '97138857502', FALSE)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO workout (routine_id, day_of_week, duration)
+VALUES (4, 'monday', 45)
+ON CONFLICT (routine_id, day_of_week) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (4, 'monday', 105, 5, 5, 80)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (4, 'monday', 107, 3, 12, 10)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (4, 'monday', 86, 3, 12, 10)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO workout (routine_id, day_of_week, duration)
+VALUES (4, 'wednesday', 45)
+ON CONFLICT (routine_id, day_of_week) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (4, 'wednesday', 192, 5, 5, 70)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (4, 'wednesday', 229, 3, 12, 40)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (4, 'wednesday', 162, 3, 12, 10)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO workout (routine_id, day_of_week, duration)
+VALUES (4, 'friday', 45)
+ON CONFLICT (routine_id, day_of_week) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (4, 'friday', 111, 5, 5, 90)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (4, 'friday', 351, 3, 12, 40)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (4, 'friday', 788, 3, 12, 120)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+-- ROUTINE 5
+INSERT INTO routine (id, member_cpf, is_standard)
+VALUES (5, '13398564082', FALSE)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO workout (routine_id, day_of_week, duration)
+VALUES (5, 'tuesday', 60)
+ON CONFLICT (routine_id, day_of_week) DO NOTHING;
+
+INSERT INTO cardio_exercise (routine_id, day_of_week, exercise_id,
+    duration, intensity)
+VALUES (5, 'tuesday', 293, 30, 5)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO cardio_exercise (routine_id, day_of_week, exercise_id,
+    duration, intensity)
+VALUES (5, 'tuesday', 269, 30, 8)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO workout (routine_id, day_of_week, duration)
+VALUES (5, 'thursday', 60)
+ON CONFLICT (routine_id, day_of_week) DO NOTHING;
+
+INSERT INTO cardio_exercise (routine_id, day_of_week, exercise_id,
+    duration, intensity)
+VALUES (5, 'thursday', 806, 30, 5)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO cardio_exercise (routine_id, day_of_week, exercise_id,
+    duration, intensity)
+VALUES (5, 'thursday', 397, 30, 7)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+-- STANDARD ROUTINES
+-- ROUTINE 6
+INSERT INTO routine (id, member_cpf, is_standard)
+VALUES (6, NULL, TRUE)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO workout (routine_id, day_of_week, duration)
+VALUES (6, 'monday', 45)
+ON CONFLICT (routine_id, day_of_week) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (6, 'monday', 105, 5, 5, 80)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (6, 'monday', 107, 3, 12, 10)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (6, 'monday', 86, 3, 12, 10)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO workout (routine_id, day_of_week, duration)
+VALUES (6, 'wednesday', 45)
+ON CONFLICT (routine_id, day_of_week) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (6, 'wednesday', 192, 5, 5, 70)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (6, 'wednesday', 229, 3, 12, 40)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (6, 'wednesday', 162, 3, 12, 10)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO workout (routine_id, day_of_week, duration)
+VALUES (6, 'friday', 45)
+ON CONFLICT (routine_id, day_of_week) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (6, 'friday', 111, 5, 5, 90)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (6, 'friday', 351, 3, 12, 40)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+    exercise_sets, repetition, exercise_weight)
+VALUES (6, 'friday', 788, 3, 12, 120)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+-- ROUTINE 7 
+INSERT INTO routine (id, member_cpf, is_standard)
+VALUES (7, NULL, TRUE)
+ON CONFLICT (id) DO NOTHING;
+
+INSERT INTO workout (routine_id, day_of_week, duration)
+VALUES (7, 'tuesday', 60)
+ON CONFLICT (routine_id, day_of_week) DO NOTHING;
+
+INSERT INTO cardio_exercise (routine_id, day_of_week, exercise_id,
+    duration, intensity)
+VALUES (7, 'tuesday', 293, 30, 5)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO cardio_exercise (routine_id, day_of_week, exercise_id,
+    duration, intensity)
+VALUES (7, 'tuesday', 269, 30, 8)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO workout (routine_id, day_of_week, duration)
+VALUES (7, 'thursday', 60)
+ON CONFLICT (routine_id, day_of_week) DO NOTHING;
+
+INSERT INTO cardio_exercise (routine_id, day_of_week, exercise_id,
+    duration, intensity)
+VALUES (7, 'thursday', 806, 30, 5)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
+
+INSERT INTO cardio_exercise (routine_id, day_of_week, exercise_id,
+    duration, intensity)
+VALUES (7, 'thursday', 397, 30, 7)
+ON CONFLICT (routine_id, day_of_week, exercise_id) DO NOTHING;
