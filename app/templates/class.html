@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <div class="container">
+    <a href="{{ url_for('classes')}}" class="return-link">
+      <div class="return center">
+        <img src="{{ url_for('static', filename='left-arrow.svg')}}" type="image/svg+xml" class="return-icon" />
+        <p>Return to classes</p>
+      </div>
+    </a>
+
+    <div class="card class-card">
+      <img src="{{ url_for('static', filename=class_data.image)}}" class="card-image class-image" alt="Avatar">
+      <div class="card-text">
+        <p><b class="member-name p-justify">{{class_data.name.capitalize()}}</b></p>
+        <br />
+        <p class="member-status class-description p-justify">{{class_data.description}}</p>
+        <p class="class-date p-justify">Every {{class_data.day}} at {{class_data.time}}</p>
+      </div>
+      <hr />
+      <div class="card card-no-shadow">
+        <img src="{{ instructor.picture }}" class="card-image card-image-routine" alt="Avatar">
+        <div class="card-text">
+        <p><b class="member-name">{{instructor.name}}</b></p>
+        <br />
+            <p class="member-status">Instructor</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+{% endblock content %}

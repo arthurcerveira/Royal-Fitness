@@ -2,6 +2,12 @@
 
 {% block content %}
   <div class="container">
+    <a href="{{ url_for('members')}}" class="return-link">
+      <div class="return center">
+        <img src="{{ url_for('static', filename='left-arrow.svg')}}" type="image/svg+xml" class="return-icon" />
+        Return to members
+      </div>
+    </a>
     <div class="card-routine">
       <div class="card card-no-shadow">
         <img src="{{ member.picture }}" class="card-image card-image-routine" alt="Avatar">
@@ -15,29 +21,30 @@
         {% endif %}
         </div>
       </div>
+      <hr>
+
+      <div class="card card-no-shadow">
+        <img src="{{ trainer.picture }}" class="card-image card-image-routine" alt="Avatar">
+        <div class="card-text">
+        <p><b class="member-name">{{trainer.name}}</b></p>
+        <br />
+            <p class="member-status">Personal Trainer</p>
+        </div>
+      </div>
       <div>    
-        {% for day, workout in routine.items() %}
+        {% for day, duration in routine.items() %}
           <hr>
-          <p class="day-routine">{{day.capitalize()}}</p>
-          {% if workout == None %}
-            <hr>
-            <p class="exercise-routine day-routine">Rest</p>
+          {% if duration == None %}
+            <p class="day-routine rest-routine">{{day.capitalize()}} - Rest</p>
           {% else %}
-            {% for exercise in workout %}
-              <hr>
-              {% if exercise.type == 'strenght' %}
-                <div class="exercise-routine day-routine">
-                  {{exercise.name}} - {{exercise.sets}}x{{exercise.repetitions}} - {{exercise.weight}}kg     
-                </div>
-              {% else %}
-                <p class="exercise-routine day-routine">
-                  {{exercise.name}} - {{exercise.duration}} minutes - {{exercise.intensity}}     
-                </p>
-              {% endif %}
-            {% endfor %}
+            <a href="{{ member.id }}/{{ day }}">
+              <p class="day-routine exercise-routine">
+                {{day.capitalize()}} - {{duration}} minutes <span>»</span>
+              </p>
+            </a>
           {% endif %}
         {% endfor %}
       </div>
-        </div>
     </div>
+  </div>
 {% endblock content %}
