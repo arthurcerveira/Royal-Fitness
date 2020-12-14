@@ -15,18 +15,35 @@
         <p><b class="member-name p-justify">{{class_data.name.capitalize()}}</b></p>
         <br />
         <p class="member-status class-description p-justify">{{class_data.description}}</p>
-        <p class="class-date p-justify">Every {{class_data.day}} at {{class_data.time}}</p>
+        <p class="class-date p-justify class-schedule">Every {{class_data.day}} at {{class_data.time}}</p>
       </div>
       <hr />
       <div class="card card-no-shadow">
-        <img src="{{ instructor.picture }}" class="card-image card-image-routine" alt="Avatar">
+        <img src="{{ instructor.picture }}" class="card-image instructor-image" alt="Avatar">
         <div class="card-text">
         <p><b class="member-name">{{instructor.name}}</b></p>
         <br />
-            <p class="member-status">Instructor</p>
+        <p class="member-status p-justify">Instructor</p>
         </div>
       </div>
-    </div>
+      <hr>
+      <div>
+        <p class="member-list">{{class_data.occupied_positions}}/{{class_data.positions}} positions are occupied</p>
+        {% for member in enrolled_members %}
+          <hr />
+          <p class="member-list member-name-list">{{ member }}</p>
+        {% endfor %}
+      </div>
+      <hr />
+      <div class="enroll-div">
+        <form action="" method="POST">
+          {{ form.hidden_tag() }}
+          <p>Enter your ID to enroll to class (Premium exclusive)</p>
+          {{ form.user_id(class="enroll-input") }}
 
+          {{ form.submit(class="button class-button enroll-button") }}
+        </form>
+      </div>
+    </div>
   </div>
 {% endblock content %}

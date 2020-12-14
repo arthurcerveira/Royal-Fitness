@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <div class="container container-black">
+    <form action="" method="POST">
+      {{ form.hidden_tag() }}
+      <fieldset class="register-field">
+        <legend>Admin Login</legend>
+        <div class="form-group">
+          {{ form.cpf.label(class="form-control-label") }}
+          {{ form.cpf(class="form-control") }}
+        </div>
+        <div class="form-group">
+          {{ form.password.label(class="form-control-label") }}
+          {{ form.password(class="form-control") }}
+        </div>
+      </fieldset>
+        {{ form.submit(class="button register-button") }}
+    </form>
+  </div>
+{% endblock content %}
+

@@ -15,9 +15,9 @@
         <p><b class="member-name">{{member.name}}</b></p>
         <br />
         {% if member.is_premium%}
-            <p class="member-status">Premium Member</p>
+            <p class="member-status p-justify">Premium Member</p>
         {% else %}
-            <p class="member-status">Regular Member</p>
+            <p class="member-status p-justify">Regular Member</p>
         {% endif %}
         </div>
       </div>
@@ -28,7 +28,7 @@
         <div class="card-text">
         <p><b class="member-name">{{trainer.name}}</b></p>
         <br />
-            <p class="member-status">Personal Trainer</p>
+            <p class="member-status p-justify">Personal Trainer</p>
         </div>
       </div>
       <div>    
@@ -37,7 +37,7 @@
           {% if duration == None %}
             <p class="day-routine rest-routine">{{day.capitalize()}} - Rest</p>
           {% else %}
-            <a href="{{ member.id }}/{{ day }}">
+            <a href="{{ url_for('workout', member_id=member.id, day=day) }}">
               <p class="day-routine exercise-routine">
                 {{day.capitalize()}} - {{duration}} minutes <span>»</span>
               </p>

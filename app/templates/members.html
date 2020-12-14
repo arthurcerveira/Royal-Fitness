@@ -3,16 +3,16 @@
 {% block content %}
     <div class="container">
         {% for member in members %}
-            <a href="routines/{{ member.id }}" class="link">
+            <a href="{{ url_for('member_workout', member_id=member.id) }}" class="link">
                 <div class="card">
                     <img src="{{ member.picture }}" class="card-image" alt="Avatar">
                     <div class="card-text">
                     <p><b class="member-name">{{member.name}}</b></p>
                     <br />
                     {% if member.is_premium%}
-                        <p class="member-status">Premium Member</p>
+                        <p class="member-status p-justify">Premium Member</p>
                     {% else %}
-                        <p class="member-status">Regular Member</p>
+                        <p class="member-status  p-justify">Regular Member</p>
                     {% endif %}
                     </div>
                 </div>

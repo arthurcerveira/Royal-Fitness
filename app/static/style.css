@@ -27,6 +27,35 @@ a {
   color: #333;
 }
 
+.message-wraper {
+  margin-bottom: 1rem !important;
+}
+
+.messages {
+  width: 80%;
+  padding: 0.6rem 1.5rem;
+  border: 1px solid #777;
+  border-radius: 10px;
+  max-width: 450px;
+  text-align: center;
+  font-size: 1rem;
+}
+
+.messages-success {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.messages-error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.messages-info {
+  background-color: #d1ecf1;
+  color: #0c5460;
+}
+
 /* Navigation */
 .nav-button {
   position: absolute;
@@ -132,6 +161,8 @@ a {
   padding: 12px 20px;
   background-color: #dd585c;
 
+  max-width: 80%;
+
   margin: auto;
   margin-bottom: 5vh;
 }
@@ -144,6 +175,12 @@ a {
   background-color: #eb6b6f;
 
   cursor: pointer;
+}
+
+.option-button {
+  background-color: #333;
+  color: #eee;
+  padding: 1rem;
 }
 
 .container {
@@ -313,7 +350,41 @@ h1 {
 .button-link {
   color: #eee;
 }
+
 /* Class */
+.instructor-image {
+  border-radius: 0;
+}
+
+.class-schedule {
+  padding: 0.7rem 0;
+}
+
+.member-list {
+  padding: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.member-name-list {
+  background-color: #ddd;
+}
+
+.enroll-div {
+  padding: 1rem;
+}
+
+.enroll-input {
+  border: #aaa solid 1px;
+  border-radius: 10px;
+  margin-top: 1rem;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0 5px;
+}
+
+.enroll-button {
+  margin-bottom: 0rem;
+}
 
 /* Exercises */
 .exercise-card {
@@ -342,4 +413,40 @@ h1 {
 .division {
   height: 1rem;
   /* border: 10px solid red; */
+}
+
+/* Register */
+legend {
+  color: #eee;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+}
+
+.form-group {
+  margin: auto;
+  max-width: 450px;
+  padding: 1rem;
+  color: #eee;
+  display: grid;
+}
+
+.form-control-label {
+  font-size: 1.2rem;
+}
+
+.form-control {
+  border: #aaa solid 1px;
+  border-radius: 10px;
+  margin-top: 1rem;
+  height: 2rem;
+  font-size: 1rem;
+  padding: 0 5px;
+}
+
+.register-button {
+  margin: auto;
+  /* color: #eee; */
+  border: none;
+  font-weight: bold;
+  margin-top: 2rem;
 }

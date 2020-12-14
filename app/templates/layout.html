@@ -1,34 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    {% if title %}
-        <title>{{ title }}</title>
-    {% else %}
-        <title>Royal Fitness</title>
-    {% endif %}
+  {% if title %}
+    <title>{{ title }}</title>
+  {% else %}
+    <title>Royal Fitness</title>
+  {% endif %}
 
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}"/>
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}"/>
 </head>
 <body>
-    <!-- Navigation -->
-    <div class="navigation">
-        <nav class="main-nav">
-            <a href="{{ url_for('landing_page')}}" class="logo">
-                <img src="{{ url_for('static', filename='logo.png')}}" alt="" class="img-logo" />
-            </a>
-        </nav>
-    </div>
+  <!-- Navigation -->
+  <div class="navigation">
+    <nav class="main-nav">
+      <a href="{{ url_for('landing_page')}}" class="logo">
+        <img src="{{ url_for('static', filename='logo.png')}}" alt="" class="img-logo" />
+      </a>
+    </nav>
+  </div>
 
-    <header class="showcase center">
-        <div class="content">
-            {% block content %}{% endblock %}
-        </div>
-    </header>
-    
-    <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/ddara" title="dDara">dDara</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+  <header class="showcase center">
+    <div class="content">
+      <div class="message-wraper">
+        {% with messages = get_flashed_messages(with_categories=true) %}
+          {% if messages %}
+            {% for category, message in messages %}
+              <div class="messages messages-{{ category }} center">
+                {{ message }}
+              </div>
+            {% endfor %}
+          {% endif %}
+        {% endwith %}
+      </div>
+      {% block content %}{% endblock %}
+    </div>
+  </header>
+  
+  <!-- <div>Icons made by <a href="https://www.flaticon.com/authors/ddara" title="dDara">dDara</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
 
 </body>
 </html>

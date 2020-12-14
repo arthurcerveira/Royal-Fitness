@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block content %}
+  <div class="container container-black">
+    <form action="" method="POST">
+      {{ form.hidden_tag() }}
+      <fieldset class="register-field">
+        <legend>Add exercises to routine</legend>
+        <div class="form-group">
+          {{ form.day.label(class="form-control-label") }}
+          {{ form.day(class="form-control") }}
+        </div>
+        <div class="form-group">
+          {{ form.exercise.label(class="form-control-label") }}
+          {{ form.exercise(class="form-control") }}
+        </div>
+        <div class="form-group">
+          {{ form.sets.label(class="form-control-label") }}
+          {{ form.sets(class="form-control") }}
+        </div>
+        <div class="form-group">
+          {{ form.repetitions.label(class="form-control-label") }}
+          {{ form.repetitions(class="form-control") }}
+        </div>
+        <div class="form-group">
+          {{ form.weight.label(class="form-control-label") }}
+          {{ form.weight(class="form-control") }}
+        </div>
+      </fieldset>
+        {{ form.submit(class="button  register-button") }}
+    </form>
+  </div>
+{% endblock content %}

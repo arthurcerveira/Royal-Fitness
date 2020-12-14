@@ -2,7 +2,7 @@
 
 {% block content %}
   <div class="container">
-    <a href="../{{ member_id }}" class="return-link">
+    <a href="{{ url_for('member_workout', member_id=member_id) }}" class="return-link">
       <div class="return center">
         <img src="{{ url_for('static', filename='left-arrow.svg')}}" type="image/svg+xml" class="return-icon" />
         Return to member
@@ -11,7 +11,9 @@
 
     {% for exercise in exercises %}
       <div class="card exercise-card exercise-text">
-        <img src="{{ exercise.picture }}" class="card-image exercise-image" alt="Avatar">
+        {% if exercise.picture %}
+          <img src="{{ exercise.picture }}" class="card-image exercise-image" alt="Avatar">
+        {% endif %}
         <div class="card-text">
         <p><b class="member-name exercise-text exercise-title">{{exercise.name.capitalize()}}</b></p>
         <br />
@@ -25,7 +27,7 @@
         </p>
       {% else %}
         <p class="exercise-instructions">
-          {{exercise.sets}} sets of {{exercise.repetitions}} repetitions with {{exercise.weight}}Kg
+          Perform the exercise for {{exercise.duration}} minutes with {{exercise.intensity}} levels of intensity
         </p>
       {% endif %}
       </div>

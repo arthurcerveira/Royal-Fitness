@@ -12,7 +12,7 @@
           <p class="class-date p-justify">Every {{class.day}} at {{class.time}}</p>
         </div>
         <button class="button class-button">
-          <a href="classes/{{ class.id }}" class="button-link">
+          <a href="{{ url_for('class_page', class_id=class.id)}}" class="button-link">
             Enroll now »
           </a>
         </button>
