@@ -40,6 +40,12 @@ for equipment in equipment_data:
 
     DML.write(query)
 
+query = "INSERT INTO equipment (id, equipment_name)\n" \
+        + f"VALUES (0, 'No equipment')\n" \
+        + "ON CONFLICT (id) DO NOTHING;\n\n"
+
+DML.write(query)
+
 # Get muscle data
 with open("./json/muscle.json") as muscle_json:
     muscle_data = json.load(muscle_json)["results"]
@@ -77,7 +83,7 @@ for exercise in exercises_data:
         picture_url = "NULL"
 
     equipments = exercise["equipment"]
-    equipment_id = equipments[0] if 0 < len(equipments) else "NULL"
+    equipment_id = equipments[0] if 0 < len(equipments) else 0
 
     muscles = exercise["muscles"]
     secondary_muscles = exercise["muscles_secondary"]

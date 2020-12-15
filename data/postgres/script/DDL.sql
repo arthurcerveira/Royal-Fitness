@@ -68,7 +68,7 @@ FOREIGN KEY (instructor_cpf) REFERENCES instructor(cpf)
     ON UPDATE CASCADE);
 
 CREATE TABLE IF NOT EXISTS member_subscription (
-    class_id        SERIAL UNIQUE NOT NULL,
+    class_id        SERIAL NOT NULL,
     member_cpf      cpf,
 PRIMARY KEY (class_id, member_cpf),
 FOREIGN KEY (class_id) REFERENCES class(id)
@@ -83,6 +83,7 @@ CREATE TABLE IF NOT EXISTS routine (
     id              SERIAL UNIQUE NOT NULL,
     is_standard     BOOLEAN NOT NULL,
     member_cpf      VARCHAR(11) DEFAULT NULL,
+    routine_name    VARCHAR(30) DEFAULT NULL,
 PRIMARY KEY (id),
 FOREIGN KEY (member_cpf) REFERENCES member(cpf)
     ON DELETE CASCADE
