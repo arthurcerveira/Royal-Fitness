@@ -26,13 +26,18 @@ class MemberRegisterForm(FlaskForm):
     date_of_birth = StringField('Date of Birth (YYYY/MM/DD)',
                                 validators=[Length(min=10, max=10)])
 
-    is_premium = SelectField('Premium user',
-                             choices=[(False, 'Regular User'),
-                                      (True, 'Premium User')],
+    is_premium = SelectField('Member category',
+                             choices=[(0, 'Regular User'),
+                                      (1, 'Premium User')],
                              validators=[DataRequired()])
 
     personal_trainer = SelectField('Personal Trainer',
                                    validators=[DataRequired()])
+
+    routine = SelectField('Select routine',
+                          validators=[DataRequired()],
+                          validate_choice=False,
+                          coerce=int)
 
     submit = SubmitField('Register member')
 

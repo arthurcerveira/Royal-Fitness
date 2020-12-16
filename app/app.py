@@ -84,6 +84,7 @@ def members():
         })
 
     conn.commit()
+    cur.close()
 
     return render_template('members.html', members=members_list)
 
@@ -147,6 +148,7 @@ def member_workout(member_id=None):
         routine[day] = time
 
     conn.commit()
+    cur.close()
 
     return render_template('routine.html', member=member, trainer=trainer, routine=routine)
 
@@ -196,6 +198,7 @@ def workout(member_id=None, day=None):
     query_results = cur.fetchall()
 
     conn.commit()
+    cur.close()
 
     for line in query_results:
         name, description, picture, equipment, duration, intensity = line
@@ -235,6 +238,7 @@ def classes():
         })
 
     conn.commit()
+    cur.close()
 
     return render_template('classes.html', classes=class_list)
 
@@ -319,9 +323,15 @@ def class_page(class_id=None):
                     ON CONFLICT (class_id, member_cpf) DO NOTHING;""")
 
         conn.commit()
+        cur.close()
 
         flash(f'{person_name} was enrolled to {name} class', 'success')
         return redirect(url_for('classes'))
+    else:
+        if form.errors:
+            errors = list(form.errors.keys())
+            error = errors[0]
+            flash(f'Error in {error}: {form.errors[error][0]}', 'error')
 
     return render_template('class.html',
                            class_data=class_data,
@@ -339,9 +349,17 @@ def register():
                 WHERE trainer.cpf = person.cpf;""")
     trainers = cur.fetchall()
 
+    cur.execute("""SELECT id, routine_name
+                FROM routine
+                WHERE is_standard = TRUE;""")
+    query_results = cur.fetchall()
+    routines = [(-1, 'Create new routine')]
+    routines.extend(query_results)
+
     form = MemberRegisterForm()
 
     form.personal_trainer.choices = trainers
+    form.routine.choices = routines
 
     if form.validate_on_submit():
         member_cpf = form.cpf.data
@@ -349,8 +367,9 @@ def register():
         phone = form.phone_number.data
         picture_url = form.picture_url.data
         date_of_birth = form.date_of_birth.data
-        is_premium = form.is_premium.data
+        is_premium = True if int(form.is_premium.data) else False
         trainer_cpf = form.personal_trainer.data
+        routine = int(form.routine.data) if form.routine.data != -1 else None
 
         cur.execute(f"""INSERT INTO person (cpf, person_name,
                     phone_number, date_of_birth, picture_url)
@@ -365,24 +384,70 @@ def register():
         cur.execute(f"""INSERT INTO routine (is_standard, member_cpf)
                     VALUES (FALSE, '{member_cpf}');""")
 
+        cur.execute(
+            f"SELECT id FROM routine WHERE member_cpf = '{member_cpf}';")
+        routine_id = cur.fetchall()[0][0]
+
+        if routine is not None:
+            cur.execute(f"""SELECT day_of_week, duration
+                        FROM workout
+                        WHERE routine_id = {routine};""")
+            workouts = cur.fetchall()
+
+            for day_of_week, duration in workouts:
+                cur.execute(f"""INSERT INTO workout (routine_id, day_of_week, duration)
+                            VALUES ({routine_id}, '{day_of_week}', {duration});""")
+
+            cur.execute(f"""SELECT day_of_week, exercise_id, duration, intensity
+                        FROM cardio_exercise
+                        WHERE routine_id = {routine};""")
+            exercises = cur.fetchall()
+
+            for day_of_week, exercise_id, duration, intensity in exercises:
+                cur.execute(f"""INSERT INTO cardio_exercise (routine_id, day_of_week, exercise_id, duration, intensity)
+                            VALUES ({routine_id}, '{day_of_week}', {exercise_id}, {duration}, {intensity});""")
+
+            cur.execute(f"""SELECT day_of_week, exercise_id, exercise_sets, repetition, exercise_weight
+                        FROM strenght_exercise
+                        WHERE routine_id = {routine};""")
+            exercises = cur.fetchall()
+
+            for day_of_week, exercise_id, exercise_sets, repetition, exercise_weight in exercises:
+                cur.execute(f"""INSERT INTO strenght_exercise (routine_id, day_of_week, exercise_id,
+                            exercise_sets, repetition, exercise_weight)
+                            VALUES ({routine_id}, '{day_of_week}', {exercise_id}, {exercise_sets}, 
+                            {repetition}, {exercise_weight});""")
+
         conn.commit()
+        cur.close()
 
         member = "Premium Member" if is_premium else "Member"
         flash(f'{name} was registered as a {member}', 'success')
 
-        return redirect(url_for('landing_page'))
+        if routine is None:
+            return redirect(url_for('add_exercise', member_id=member_cpf))
+        else:
+            return redirect(url_for('member_workout', member_id=member_cpf))
+    else:
+        if form.errors:
+            errors = list(form.errors.keys())
+            error = errors[0]
+            flash(f'Error in {error}: {form.errors[error][0]}', 'error')
 
     return render_template('register.html', form=form)
 
 
 @app.route('/add-exercise/<member_id>', methods=['GET', 'POST'])
+@login_required
 def add_exercise(member_id=None):
     cur = conn.cursor()
     cur.execute("""SELECT exercise_id, exercise_name
-                FROM exercise_info
-                WHERE LENGTH(exercise_name) < 20;""")
+                FROM exercise_info;""")
     exercises = cur.fetchall()
     exercises_dict = {exercise_id: name for exercise_id, name in exercises}
+
+    exercises = [(code, name) if len(name) < 25 else (
+        code, name[:20]+'...') for code, name in exercises]
 
     form = MemberRoutineForm()
     form.exercise.choices = exercises
@@ -416,13 +481,17 @@ def add_exercise(member_id=None):
                     repetition = EXCLUDED.repetition;""")
 
         conn.commit()
+        cur.close()
 
         exercise_name = exercises_dict[int(exercise)]
         flash(f'Added exercise {exercise_name} to workout on {day}', 'success')
+    else:
+        if form.errors:
+            errors = list(form.errors.keys())
+            error = errors[0]
+            flash(f'Error in {error}: {form.errors[error][0]}', 'error')
 
-        # return redirect(url_for('landing_page'))
-
-    return render_template('add-exercise.html', form=form)
+    return render_template('add-exercise.html', form=form, member_id=member_id)
 
 
 @app.route('/login', methods=['GET', 'POST'])
@@ -446,6 +515,7 @@ def login():
         query_results = cur.fetchall()
 
         conn.commit()
+        cur.close()
 
         if len(query_results) == 0:
             flash(f'Invalid CPF', 'error')
@@ -454,16 +524,22 @@ def login():
 
             if input_password == password:
                 login_user(admin(cpf, name, password))
-                flash(f'Login succesful', 'success')
+                flash(f'You are logged as admin', 'success')
 
                 return redirect(url_for('landing_page'))
             else:
                 flash(f'Wrong password', 'error')
+    else:
+        if form.errors:
+            errors = list(form.errors.keys())
+            error = errors[0]
+            flash(f'Error in {error}: {form.errors[error][0]}', 'error')
 
     return render_template('login.html', form=form)
 
 
 @app.route('/logout')
+@login_required
 def logout():
     logout_user()
     return redirect(url_for('landing_page'))

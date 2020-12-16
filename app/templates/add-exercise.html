@@ -2,7 +2,14 @@
 
 {% block content %}
   <div class="container container-black">
-    <form action="" method="POST">
+    <a href="{{ url_for('member_workout', member_id=member_id) }}" class="return-link">
+      <div class="return center">
+        <img src="{{ url_for('static', filename='left-arrow.svg')}}" type="image/svg+xml" class="return-icon" />
+        <p>Return to member routine</p>
+      </div>
+    </a>
+
+    <form action="" method="POST" autocomplete="off">
       {{ form.hidden_tag() }}
       <fieldset class="register-field">
         <legend>Add exercises to routine</legend>

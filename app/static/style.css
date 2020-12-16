@@ -177,10 +177,28 @@ a {
   cursor: pointer;
 }
 
+.option-buttons {
+  display: grid;
+}
+
 .option-button {
+  transition-duration: 0.4s;
+  border-radius: 5px;
+  margin: 5px 0;
   background-color: #333;
   color: #eee;
-  padding: 1rem;
+  padding: 0.8rem;
+  width: 10rem;
+}
+
+.margin-top {
+  margin-top: 20px !important;
+}
+
+.option-button:hover {
+  background-color: #666;
+
+  cursor: pointer;
 }
 
 .container {
@@ -196,6 +214,7 @@ a {
 
 .container-black {
   background-color: rgba(0, 0, 0, 0.7);
+  max-width: 1000px;
 }
 
 .container::-webkit-scrollbar {

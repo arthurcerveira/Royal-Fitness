@@ -12,7 +12,7 @@
       Enroll to classes <span>»</span>
     </a>
 
-    <div class="center">
+    <div class="center option-buttons">
       {% if current_user.is_authenticated %}
         <a href="{{ url_for('register')}}" class="option-button">Register Member</a>
         <a href="{{ url_for('logout')}}" class="option-button">Logout</a>
