@@ -1,11 +1,13 @@
 # Create DML file based on JSON data
-from pprint import pprint
 import json
 
 DML = open("./postgres/script/DML-API.sql", "w")
 
 # Add people data to DB
-DML.write("-- PEOPLE\n")
+DML.write("-- PEOPLE\n"
+          + "INSERT INTO person (cpf, person_name, date_of_birth, "
+          + "phone_number, picture_url)\n"
+          + "VALUES\n")
 
 with open("./json/people.json") as people_json:
     people_data = json.load(people_json)["results"]
@@ -17,34 +19,38 @@ for person in people_data:
     phone = person['phone_number']
     picture = person['picture_url']
 
-    query = "INSERT INTO person (cpf, person_name, date_of_birth, " \
-            + "phone_number, picture_url)\n" \
-            + f"VALUES ('{cpf}', '{name}', {dob}, '{phone}', '{picture}')\n" \
-            + "ON CONFLICT (cpf) DO NOTHING;\n\n"
+    values = f"\t('{cpf}', '{name}', {dob}, '{phone}', '{picture}'),\n" \
+        if people_data[-1]["cpf"] != cpf \
+        else f"\t('{cpf}', '{name}', {dob}, '{phone}', '{picture}')\n"
 
-    DML.write(query)
+    DML.write(values)
+
+DML.write("ON CONFLICT (cpf) DO NOTHING;\n\n")
 
 # Add equipment data to DB
-DML.write("-- EQUIPMENT\n")
+DML.write("-- EQUIPMENT\n"
+          + "INSERT INTO equipment (id, equipment_name)\n"
+          + "VALUES\n")
 
 with open("./json/equipment.json") as equipment_json:
     equipment_data = json.load(equipment_json)["results"]
+
+equipment_data.append({
+    "name": 'No equipment',
+    "id": 0
+})
 
 for equipment in equipment_data:
     name = equipment["name"]
     equipment_id = equipment["id"]
 
-    query = "INSERT INTO equipment (id, equipment_name)\n" \
-        + f"VALUES ({equipment_id}, '{name}')\n" \
-        + "ON CONFLICT (id) DO NOTHING;\n\n"
+    values = f"\t({equipment_id}, '{name}'),\n" \
+        if equipment_data[-1]["id"] != equipment_id \
+        else f"\t({equipment_id}, '{name}')\n"
 
-    DML.write(query)
+    DML.write(values)
 
-query = "INSERT INTO equipment (id, equipment_name)\n" \
-        + f"VALUES (0, 'No equipment')\n" \
-        + "ON CONFLICT (id) DO NOTHING;\n\n"
-
-DML.write(query)
+DML.write("ON CONFLICT (id) DO NOTHING;\n\n")
 
 # Get muscle data
 with open("./json/muscle.json") as muscle_json:
@@ -61,7 +67,10 @@ exercise_images_dict = {exercise_image["exercise"]: exercise_image
                         for exercise_image in exercise_images_data}
 
 # Add exercise data to DB
-DML.write("-- EXERCISES\n")
+DML.write("-- EXERCISES\n"
+          + "INSERT INTO exercise_info (exercise_id, exercise_name, exercise_desc, "
+          + "primary_muscle, second_muscle, equipment_id, picture_url)\n"
+          + "VALUES\n")
 
 with open("./json/exercises.json") as exercises_json:
     exercises_data = json.load(exercises_json)["results"]
@@ -97,12 +106,14 @@ for exercise in exercises_data:
     if secondary_muscle != "NULL":
         secondary_muscle = f"'{muscles_dict[secondary_muscle]}'"
 
-    query = "INSERT INTO exercise_info (exercise_id, exercise_name, exercise_desc,\n" \
-        + "\tprimary_muscle, second_muscle, equipment_id, picture_url)\n" \
-        + f"VALUES ({exercise_id}, '{name}', '{description}', {primary_muscle},\n" \
-        + f"\t{secondary_muscle}, {equipment_id}, {picture_url})\n" \
-        + "ON CONFLICT (exercise_id) DO NOTHING;\n\n"
+    values = f"\t({exercise_id}, '{name}', '{description}', {primary_muscle}, " \
+        + f"{secondary_muscle}, {equipment_id}, {picture_url}),\n" \
+        if exercises_data[-1]["id"] != exercise_id \
+        else f"\t({exercise_id}, '{name}', '{description}', {primary_muscle}, " \
+        + f"{secondary_muscle}, {equipment_id}, {picture_url})\n"
 
-    DML.write(query)
+    DML.write(values)
+
+DML.write("ON CONFLICT (exercise_id) DO NOTHING;\n\n")
 
 DML.close()

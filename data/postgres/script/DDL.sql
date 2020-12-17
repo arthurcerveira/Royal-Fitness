@@ -3,7 +3,7 @@ SET search_path TO royal_fitness_schema;
 SET client_min_messages TO WARNING;
 
 -- DOMAINS
-CREATE DOMAIN cpf VARCHAR(11) NOT NULL;
+CREATE DOMAIN cpf CHAR(11) NOT NULL;
 CREATE DOMAIN day_of_week VARCHAR(11) 
     CHECK (VALUE IN ('sunday', 'monday', 'tuesday', 'wednesday', 
                      'thursday', 'friday', 'saturday'));
@@ -59,7 +59,7 @@ CREATE TABLE IF NOT EXISTS class (
     class_desc      VARCHAR(500),
     day_of_week     day_of_week,
     positions       class_positions NOT NULL,
-    schedule        VARCHAR(5) NOT NULL,
+    schedule        CHAR(5) NOT NULL,
     picture         VARCHAR(200),
     instructor_cpf  cpf,
 PRIMARY KEY (id),
@@ -82,7 +82,7 @@ FOREIGN KEY (member_cpf) REFERENCES member(cpf)
 CREATE TABLE IF NOT EXISTS routine (
     id              SERIAL UNIQUE NOT NULL,
     is_standard     BOOLEAN NOT NULL,
-    member_cpf      VARCHAR(11) DEFAULT NULL,
+    member_cpf      CHAR(11) DEFAULT NULL,
     routine_name    VARCHAR(30) DEFAULT NULL,
 PRIMARY KEY (id),
 FOREIGN KEY (member_cpf) REFERENCES member(cpf)
