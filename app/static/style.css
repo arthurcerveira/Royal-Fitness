@@ -429,6 +429,11 @@ h1 {
   padding: 0.5rem 1rem;
 }
 
+.exercise-equipment {
+  background-color: #eee;
+  border-radius: 0 0 10px 10px;
+}
+
 .division {
   height: 1rem;
   /* border: 10px solid red; */

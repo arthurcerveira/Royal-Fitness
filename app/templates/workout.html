@@ -30,7 +30,13 @@
           Perform the exercise for {{exercise.duration}} minutes with {{exercise.intensity}} levels of intensity
         </p>
       {% endif %}
-      </div>
+      {% if exercise.equipment != "No equipment" %}
+        <hr />
+        <p class="exercise-instructions exercise-equipment">
+          This exercise must be performed on {{ exercise.equipment }}
+        </p>
+      {% endif %}
+      </div>  
     {% endfor %}
   </div>
 {% endblock content %}

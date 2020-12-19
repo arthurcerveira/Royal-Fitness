@@ -1,5 +1,3 @@
-from pprint import pprint
-
 from flask import Flask, render_template, url_for, flash, redirect
 from flask_login import LoginManager, UserMixin, login_user, current_user, logout_user, login_required
 import psycopg2
